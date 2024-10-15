@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kgan2 - Baños Públicos en Mar del Plata</title>
+
+    <!-- Leaflet CSS para el mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Kgan2 - Encuentra Baños Públicos en Mar del Plata</h1>
+    </header>
+
+    <main>
+        <!-- Sección del mapa -->
+        <section id="map-section">
+            <h2>Mapa de Baños Públicos</h2>
+            <div id="map"></div>
+        </section>
+
+        <!-- Sección de creación de usuario -->
+        <section id="user-section">
+            <h2>Crear Usuario</h2>
+            <form id="user-form">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+
+        <!-- Sección del foro -->
+        <section id="forum-section">
+            <h2>Opiniones</h2>
+            <p>¿Tienes algo que decir sobre los baños públicos en Mar del Plata? <a href="foro.html">¡Entra al foro!</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kgan2. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Leaflet JS para el mapa -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Archivo JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

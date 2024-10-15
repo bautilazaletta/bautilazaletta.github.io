@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro - Kgan2</title>
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Foro de Opiniones - Kgan2</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="comments-section">
+            <h2>Deja tu opinión sobre los baños públicos</h2>
+
+            <!-- Formulario para comentarios -->
+            <form id="comment-form">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" placeholder="Tu nombre" required>
+
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" placeholder="Escribe tu opinión..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Sección para mostrar los comentarios -->
+            <div id="comments-display">
+                <h3>Comentarios:</h3>
+                <ul id="comment-list">
+                    <!-- Los comentarios aparecerán aquí -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kgan2. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Archivo JavaScript personalizado -->
+    <script src="foro.js"></script>
+</body>
+</html>
